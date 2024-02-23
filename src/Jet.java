@@ -5,10 +5,14 @@ public class Jet {
         this.height = height;
     }
 
-    public void simulate() {
-        System.out.println("Simulate Jet");
-        height*=2;
+    public void simulate(Weather weather) {
 
+        switch (weather) {
+            case SUN -> {height+=10;
+            }
+            case FOG -> {height-=10;
+            }
+        }
     }
 
     @Override
