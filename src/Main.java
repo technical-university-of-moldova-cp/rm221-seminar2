@@ -4,7 +4,9 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-    Jet jet = new Jet();
+    Jet jet = new Jet(50);
+        System.out.println(jet);
     jet.simulate();
+        System.out.println(jet);
     }
 }
